@@ -6,10 +6,18 @@
   <title>Stract</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.getElementById('hamburger');
+      var navMobile = document.getElementById('navMobile');
+      hamburger.addEventListener('click', function() {
+        navMobile.classList.toggle('open');
+      });
+    });
+  </script>
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="#" class="logo">
@@ -22,10 +30,21 @@
         <li><a href="#">Pricing</a></li>
       </ul>
       <button class="nav-cta">Get 14 days free trial</button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+    <ul class="nav-mobile" id="navMobile">
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Pricing</a></li>
+      <button class="nav-mobile-cta">Get 14 days free trial</button>
+    </ul>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-left">
       <h1>Advanced email marketing software for your business</h1>
@@ -44,7 +63,6 @@
         <span class="trustpilot-text">4900+ 5 Stars</span>
       </div>
     </div>
-
     <div class="hero-right">
       <img src="images/dashboard.png" alt="Dashboard Preview" class="dashboard-img" />
     </div>
@@ -69,389 +87,296 @@
     </div>
   </section>
 
-<section class="features">
-  <div class="features-container">
-    <h2 class="features-title">3,583 Customers are using Postcrafts</h2>
-
-    <div class="features-grid">
-
-      <div class="feature-item">
-        <div class="feature-icon-wrap">
-          <img src="images/MadefordeveloperIcon.png" alt="Made for Developers" class="feature-icon-img" />
-        </div>
-        <div class="feature-text">
-          <h4>Made for Developers</h4>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-        </div>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-icon-wrap">
-          <img src="images/videoIcon.png" alt="Helpful Video Tutorials" class="feature-icon-img" />
-        </div>
-        <div class="feature-text">
-          <h4>Helpful Video Tutorials</h4>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-        </div>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-icon-wrap">
-          <img src="images/CodedblockIcon.png" alt="120+ Coded Blocks" class="feature-icon-img" />
-        </div>
-        <div class="feature-text">
-          <h4>120+ Coded Blocks</h4>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-        </div>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-icon-wrap">
-          <img src="images/SecuredPaymentIcon.png" alt="Secured Payments" class="feature-icon-img" />
-        </div>
-        <div class="feature-text">
-          <h4>Secured Payments</h4>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="features-cta">
-      <button class="features-btn">Get our 14 days free trial</button>
-    </div>
-
-  </div>
-</section>
-
-<section class="testimonials">
-  <div class="testimonials-container">
-    <h2 class="testimonials-title">Customers are loving our UI Kit</h2>
-
-    <div class="testimonials-grid">
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="images/leslie.png" alt="Leslie Alexander" class="testimonial-avatar-img" />
-          <div class="testimonial-info">
-            <h5>Leslie Alexander</h5>
-            <span>CEO at Creativex</span>
+  <section class="features">
+    <div class="features-container">
+      <h2 class="features-title">3,583 Customers are using Postcrafts</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <img src="images/MadefordeveloperIcon.png" alt="Made for Developers" class="feature-icon-img" />
           </div>
-          <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
-        </div>
-        <p>OMG! I cannot believe that I have got a brand new landing page after getting @Omega...</p>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="images/Kristin.png" alt="Kristin Watson" class="testimonial-avatar-img" />
-          <div class="testimonial-info">
-            <h5>Kristin Watson</h5>
-            <span>CEO at Creativex</span>
+          <div class="feature-text">
+            <h4>Made for Developers</h4>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
           </div>
-          <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus. ut mi interdum.</p>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="images/Courtney.png" alt="Courtney Henry" class="testimonial-avatar-img" />
-          <div class="testimonial-info">
-            <h5>Courtney Henry</h5>
-            <span>CEO at Creativex</span>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <img src="images/videoIcon.png" alt="Helpful Video Tutorials" class="feature-icon-img" />
           </div>
-          <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus.</p>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="images/Jane.png" alt="Jane Cooper" class="testimonial-avatar-img" />
-          <div class="testimonial-info">
-            <h5>Jane Cooper</h5>
-            <span>CEO at Creativex</span>
+          <div class="feature-text">
+            <h4>Helpful Video Tutorials</h4>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
           </div>
-          <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus.</p>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="images/brooklyn.png" alt="Brooklyn Simmons" class="testimonial-avatar-img" />
-          <div class="testimonial-info">
-            <h5>Brooklyn Simmons</h5>
-            <span>CEO at Creativex</span>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <img src="images/CodedblockIcon.png" alt="120+ Coded Blocks" class="feature-icon-img" />
           </div>
-          <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
-        </div>
-        <p>OMG! I cannot believe that I have got a brand new landing page after getting @Omega...</p>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="images/Dianne.png" alt="Dianne Russell" class="testimonial-avatar-img" />
-          <div class="testimonial-info">
-            <h5>Dianne Russell</h5>
-            <span>CEO at Creativex</span>
+          <div class="feature-text">
+            <h4>120+ Coded Blocks</h4>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
           </div>
-          <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus. ut mi interdum.</p>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="images/Arienne.png" alt="Arlene McCoy" class="testimonial-avatar-img" />
-          <div class="testimonial-info">
-            <h5>Arlene McCoy</h5>
-            <span>CEO at Creativex</span>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <img src="images/SecuredPaymentIcon.png" alt="Secured Payments" class="feature-icon-img" />
           </div>
-          <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus.</p>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="images/savannah.png" alt="Savannah Nguyen" class="testimonial-avatar-img" />
-          <div class="testimonial-info">
-            <h5>Savannah Nguyen</h5>
-            <span>CEO at Creativex</span>
+          <div class="feature-text">
+            <h4>Secured Payments</h4>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
           </div>
-          <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="view-all-wrap">
-  <button class="view-all-btn">View all customer stories</button>
-</div>
-
-<section class="sales-section">
-  <div class="sales-container">
-
-    <!-- Left Text -->
-    <div class="sales-left">
-      <h2>Increase your sales via email marketing</h2>
-
-      <div class="sales-feature">
-        <div class="sales-icon blue">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-          </svg>
-        </div>
-        <div>
-          <h4>Simply Copy & Paste</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt elementum feugiat interdum tortor, porttitor morbi sed facilisis.</p>
         </div>
       </div>
-
-      <div class="sales-feature">
-        <div class="sales-icon yellow">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-          </svg>
-        </div>
-        <div>
-          <h4>Easy to Customize</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt elementum feugiat interdum tortor, porttitor morbi sed facilisis.</p>
-        </div>
+      <div class="features-cta">
+        <button class="features-btn">Get our 14 days free trial</button>
       </div>
     </div>
+  </section>
 
-    <!-- Right Charts -->
-    <div class="sales-right">
-
-      <div class="sales-chart"
-        <img src="images/card.png" alt="Sales Chart" class="sales-chart-img" />
-      </div>
-      <!-- Cashback Card -->
-      <div class="cashback-card">
-        <div class="cashback-top">
-          <p class="cashback-label">Total cashback</p>
-          <h3 class="cashback-amount">₦1,531</h3>
-          <span class="cashback-change">+5.4%</span>
-          <div class="cashback-avatars">
-            <div class="ca orange">O</div>
-            <div class="ca blue">B</div>
-            <div class="ca pink">P</div>
-          </div>
-          <div class="cashback-bar">
-            <div class="cashback-bar-fill"></div>
-          </div>
-        </div>
-        <div class="cashback-bottom">
-          <h3 class="spent-amount">₦328</h3>
-          <div class="spent-row">
-            <span class="spent-label"><small>this month</small></span>
-            <span class="spent-badge">98%</span>
-          </div>
-          <p class="spent-link">All Spent Summary &nbsp;›</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CHAT SECTION -->
-<section class="chat-section">
-  <div class="chat-container">
-
-    <!-- Left Chat Image -->
-    <div class="chat-left">
-      <img src="images/ChatImage.png" alt="Chat Interface" class="chat-img" />
-    </div>
-
-    <!-- Right Text -->
-    <div class="chat-right">
-      <h2>Customers can easily receive new updates</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
-      <button class="chat-cta">Get our 14 days free trial</button>
-    </div>
-
-  </div>
-</section>
-
-<!-- CUSTOMIZE SECTION -->
-<section class="customize-section">
-  <div class="customize-container">
-
-    <!-- Left Text -->
-    <div class="customize-left">
-      <h2>Easily customizable & manage your team</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
-      <button class="customize-cta">Get our 14 days free trial</button>
-    </div>
-
-    <div class="customize-right">
-      <img src="images/DealsImage.png" alt="Deals Chart" class="deals-img" />
-    </div>
-  </div>
-</section>
-
-
-<!-- CTA BANNER -->
-<section class="cta-banner">
-  <div class="cta-banner-container">
-    <p class="cta-banner-text">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-    <button class="cta-banner-btn">Get our 14 days free trial</button>
-    <p class="cta-no-card">No credit card required</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-container">
-
-    <!-- Top Footer -->
-    <div class="footer-top">
-
-      <!-- Logo -->
-      <div class="footer-logo-col">
-        <a href="#" class="footer-logo">
-          <img src="images/logo.png" alt="Logo" class="footer-logo-img" />
-        </a>
-      </div>
-
-      <!-- Columns -->
-      <div class="footer-cols">
-
-        <!-- Company -->
-        <div class="footer-col">
-          <h6>COMPANY</h6>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Career</a></li>
-          </ul>
-        </div>
-
-        <!-- Help -->
-        <div class="footer-col">
-          <h6>HELP</h6>
-          <ul>
-            <li><a href="#">Customer Support</a></li>
-            <li><a href="#">Delivery Details</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-
-        <!-- Resources -->
-        <div class="footer-col">
-          <h6>RESOURCES</h6>
-          <ul>
-            <li><a href="#">Free eBooks</a></li>
-            <li><a href="#">Development Tutorial</a></li>
-            <li><a href="#">How to - Blog</a></li>
-            <li><a href="#">Youtube Playlist</a></li>
-          </ul>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="footer-col footer-newsletter-col">
-          <h6>SUBSCRIBE TO NEWSLETTER</h6>
-          <div class="newsletter-form">
-            <input type="email" placeholder="Enter email address" />
-            <button>Join</button>
-          </div>
-          <div class="footer-contact">
-            <div class="footer-contact-item">
-              <span class="contact-label">CALL US</span>
-              <span class="contact-value">(+1) 456-4933</span>
+  <section class="testimonials">
+    <div class="testimonials-container">
+      <h2 class="testimonials-title">Customers are loving our UI Kit</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/leslie.png" alt="Leslie Alexander" class="testimonial-avatar-img" />
+            <div class="testimonial-info">
+              <h5>Leslie Alexander</h5>
+              <span>CEO at Creativex</span>
             </div>
-            <div class="footer-contact-item">
-              <span class="contact-label">EMAIL US</span>
-              <span class="contact-value">mail@example.com</span>
+            <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+          </div>
+          <p>OMG! I cannot believe that I have got a brand new landing page after getting @Omega...</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/Kristin.png" alt="Kristin Watson" class="testimonial-avatar-img" />
+            <div class="testimonial-info">
+              <h5>Kristin Watson</h5>
+              <span>CEO at Creativex</span>
+            </div>
+            <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus. ut mi interdum.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/Courtney.png" alt="Courtney Henry" class="testimonial-avatar-img" />
+            <div class="testimonial-info">
+              <h5>Courtney Henry</h5>
+              <span>CEO at Creativex</span>
+            </div>
+            <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/Jane.png" alt="Jane Cooper" class="testimonial-avatar-img" />
+            <div class="testimonial-info">
+              <h5>Jane Cooper</h5>
+              <span>CEO at Creativex</span>
+            </div>
+            <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/brooklyn.png" alt="Brooklyn Simmons" class="testimonial-avatar-img" />
+            <div class="testimonial-info">
+              <h5>Brooklyn Simmons</h5>
+              <span>CEO at Creativex</span>
+            </div>
+            <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+          </div>
+          <p>OMG! I cannot believe that I have got a brand new landing page after getting @Omega...</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/Dianne.png" alt="Dianne Russell" class="testimonial-avatar-img" />
+            <div class="testimonial-info">
+              <h5>Dianne Russell</h5>
+              <span>CEO at Creativex</span>
+            </div>
+            <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus. ut mi interdum.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/Arienne.png" alt="Arlene McCoy" class="testimonial-avatar-img" />
+            <div class="testimonial-info">
+              <h5>Arlene McCoy</h5>
+              <span>CEO at Creativex</span>
+            </div>
+            <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/savannah.png" alt="Savannah Nguyen" class="testimonial-avatar-img" />
+            <div class="testimonial-info">
+              <h5>Savannah Nguyen</h5>
+              <span>CEO at Creativex</span>
+            </div>
+            <svg class="twitter-icon" width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="view-all-wrap">
+    <button class="view-all-btn">View all customer stories</button>
+  </div>
+
+  <section class="sales-section">
+    <div class="sales-container">
+      <div class="sales-left">
+        <h2>Increase your sales via email marketing</h2>
+        <div class="sales-feature">
+          <div class="sales-icon blue">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Simply Copy & Paste</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt elementum feugiat interdum tortor, porttitor morbi sed facilisis.</p>
+          </div>
+        </div>
+        <div class="sales-feature">
+          <div class="sales-icon yellow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Easy to Customize</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt elementum feugiat interdum tortor, porttitor morbi sed facilisis.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sales-right">
+        <div class="sales-chart">
+          <img src="images/SalesprogressImage.png" alt="Sales Chart" class="sales-chart-img" />
+        </div>
+      </div>  
+    </div>  
+  </section>
+
+  <section class="chat-section">
+    <div class="chat-container">
+      <div class="chat-left">
+        <img src="images/ChatImage.png" alt="Chat Interface" class="chat-img" />
+      </div>
+      <div class="chat-right">
+        <h2>Customers can easily receive new updates</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
+        <button class="chat-cta">Get our 14 days free trial</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="customize-section">
+    <div class="customize-container">
+      <div class="customize-left">
+        <h2>Easily customizable & manage your team</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
+        <button class="customize-cta">Get our 14 days free trial</button>
+      </div>
+      <div class="customize-right">
+        <img src="images/DealsImage.png" alt="Deals Chart" class="deals-img" />
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-banner-container">
+      <p class="cta-banner-text">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+      <button class="cta-banner-btn">Get our 14 days free trial</button>
+      <p class="cta-no-card">No credit card required</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo-col">
+          <a href="#" class="footer-logo">
+            <img src="images/logo.png" alt="Logo" class="footer-logo-img" />
+          </a>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h6>COMPANY</h6>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h6>HELP</h6>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Delivery Details</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h6>RESOURCES</h6>
+            <ul>
+              <li><a href="#">Free eBooks</a></li>
+              <li><a href="#">Development Tutorial</a></li>
+              <li><a href="#">How to - Blog</a></li>
+              <li><a href="#">Youtube Playlist</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-newsletter-col">
+            <h6>SUBSCRIBE TO NEWSLETTER</h6>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Enter email address" />
+              <button>Join</button>
+            </div>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <span class="contact-label">CALL US</span>
+                <span class="contact-value">(+1) 456-4933</span>
+              </div>
+              <div class="footer-contact-item">
+                <span class="contact-label">EMAIL US</span>
+                <span class="contact-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="731e121a1f33160b121e031f165d101c1e">[email&#160;protected]</a></span>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
-
-    </div>
-
-    <!-- Bottom Footer -->
-    <div class="footer-bottom">
-      <p>© Copyright 2021. All Rights Reserved</p>
-      <div class="footer-socials">
-        <!-- Twitter -->
-        <a href="#">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/>
-          </svg>
-        </a>
-        <!-- Facebook -->
-        <a href="#">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-          </svg>
-        </a>
-        <!-- Instagram -->
-        <a href="#">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
-        <!-- GitHub -->
-        <a href="#">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/>
-          </svg>
-        </a>
+      <div class="footer-bottom">
+        <p>© Copyright 2021. All Rights Reserved</p>
+        <div class="footer-socials">
+          <a href="#">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.6 1.64.96a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.54 4.54 0 0 1-2.04.08c.58 1.8 2.25 3.1 4.23 3.14A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
-
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
