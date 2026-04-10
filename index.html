@@ -10,9 +10,15 @@
     document.addEventListener('DOMContentLoaded', function() {
       var hamburger = document.getElementById('hamburger');
       var navMobile = document.getElementById('navMobile');
-      hamburger.addEventListener('click', function() {
-        navMobile.classList.toggle('open');
-      });
+
+      if (hamburger && navMobile) {
+        hamburger.addEventListener('click', function() {
+          navMobile.classList.toggle('open');
+
+          var isExpanded = navMobile.classList.contains('open');
+          hamburger.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+        });
+      }
     });
   </script>
 </head>
@@ -30,18 +36,26 @@
         <li><a href="#">Pricing</a></li>
       </ul>
       <button class="nav-cta">Get 14 days free trial</button>
-      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+
+      <button
+        class="nav-hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+        aria-controls="navMobile"
+        aria-expanded="false"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
+
     <ul class="nav-mobile" id="navMobile">
       <li><a href="#">Features</a></li>
       <li><a href="#">Solutions</a></li>
       <li><a href="#">Resources</a></li>
       <li><a href="#">Pricing</a></li>
-      <button class="nav-mobile-cta">Get 14 days free trial</button>
+      <li><button class="nav-mobile-cta">Get 14 days free trial</button></li>
     </ul>
   </nav>
 
@@ -266,8 +280,8 @@
         <div class="sales-chart">
           <img src="images/salesprogressimage.png" alt="Sales Chart" class="sales-chart-img" />
         </div>
-      </div>  
-    </div>  
+      </div>
+    </div>
   </section>
 
   <section class="chat-section">
@@ -353,7 +367,7 @@
               </div>
               <div class="footer-contact-item">
                 <span class="contact-label">EMAIL US</span>
-                <span class="contact-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="731e121a1f33160b121e031f165d101c1e">[email&#160;protected]</a></span>
+                <span class="contact-value"><a href="mailto:hello@stract.com">hello@stract.com</a></span>
               </div>
             </div>
           </div>

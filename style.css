@@ -1,3 +1,4 @@
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -18,8 +19,6 @@
   --gray-muted:  #aaa;
   --green:       #22c55e;
   --yellow:      #f59e0b;
-  --orange:      #f97316;
-  --pink:        #ec4899;
   --white:       #ffffff;
   --radius-sm:   6px;
   --radius-md:   10px;
@@ -35,7 +34,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: var(--white);
+  background-color: white;
   color: var(--black);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -46,9 +45,10 @@ button { cursor: pointer; font-family: 'Inter', sans-serif; }
 a      { text-decoration: none; }
 ul     { list-style: none; }
 
+
 .navbar {
   width: 100%;
-  background-color: var(--white);
+  background-color: white;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -85,8 +85,8 @@ ul     { list-style: none; }
 .nav-links a:hover { color: var(--blue); }
 
 .nav-cta {
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: #4F86F7;
+  color: white;
   border: none;
   border-radius: var(--radius-sm);
   padding: 10px 20px;
@@ -96,7 +96,7 @@ ul     { list-style: none; }
   transition: background-color 0.2s;
   flex-shrink: 0;
 }
-.nav-cta:hover { background-color: var(--blue-dark); }
+.nav-cta:hover { background-color: darkblue; }
 
 .nav-hamburger {
   display: none;
@@ -110,7 +110,7 @@ ul     { list-style: none; }
   display: block;
   width: 22px;
   height: 2px;
-  background: var(--black);
+  background: black;
   border-radius: 2px;
   transition: all 0.3s;
 }
@@ -118,7 +118,7 @@ ul     { list-style: none; }
 .nav-mobile {
   display: none;
   flex-direction: column;
-  background: var(--white);
+  background: white;
   border-top: 1px solid #f0f0f0;
   padding: 16px 20px 20px;
   gap: 4px;
@@ -133,7 +133,7 @@ ul     { list-style: none; }
   border-bottom: 1px solid #f5f5f5;
   transition: color 0.2s;
 }
-.nav-mobile li a:hover { color: var(--blue); }
+.nav-mobile li a:hover { color: #4F86F7; }
 .nav-mobile .nav-mobile-cta {
   margin-top: 12px;
   background-color: var(--blue);
@@ -343,6 +343,7 @@ ul     { list-style: none; }
 }
 .features-btn:hover { background-color: var(--blue-dark); }
 
+
 .testimonials {
   background-color: var(--gray-bg);
   padding: 72px var(--px);
@@ -429,6 +430,7 @@ ul     { list-style: none; }
 }
 .view-all-btn:hover { background-color: var(--blue-dark); }
 
+
 .sales-section {
   background-color: var(--white);
   padding: 80px var(--px);
@@ -503,76 +505,6 @@ ul     { list-style: none; }
   display: block;
 }
 
-.cashback-cards {
-  flex: 0 0 160px;
-  width: 160px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.cashback-card {
-  background: var(--gray-light);
-  border: 1px solid var(--gray-border);
-  border-radius: 12px;
-  overflow: hidden;
-  padding: 14px;
-}
-
-.cashback-top-card {
-  flex: 1;
-}
-
-.cashback-bottom-card {
-  flex: 1;
-}
-
-.cashback-label {
-  font-size: 0.65rem;
-  color: var(--gray-muted);
-  margin-bottom: 4px;
-}
-.cashback-amount {
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: var(--black);
-  margin-bottom: 2px;
-}
-.cashback-change {
-  font-size: 0.65rem;
-  color: var(--green);
-  font-weight: 600;
-}
-.cashback-avatars {
-  display: flex;
-  margin: 8px 0;
-}
-.ca {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  font-size: 0.55rem;
-  font-weight: 700;
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1.5px solid var(--white);
-  margin-left: -4px;
-}
-.ca:first-child  { margin-left: 0; }
-.ca.orange       { background: var(--orange); }
-.ca.blue         { background: var(--blue); }
-.ca.pink         { background: var(--pink); }
-.cashback-bar    { height: 4px; background: #e5e7eb; border-radius: 2px; margin-top: 8px; }
-.cashback-bar-fill { height: 100%; width: 65%; background: var(--blue); border-radius: 2px; }
-.spent-amount    { font-size: 1.4rem; font-weight: 800; color: var(--black); }
-.spent-row       { display: flex; align-items: center; gap: 6px; margin: 4px 0; }
-.spent-label     { font-size: 0.7rem; color: var(--gray-muted); }
-.spent-label small { font-size: 0.65rem; }
-.spent-badge     { background: var(--green); color: var(--white); font-size: 0.6rem; font-weight: 700; padding: 1px 5px; border-radius: 4px; }
-.spent-link      { font-size: 0.7rem; color: var(--blue); cursor: pointer; margin-top: 8px; }
-
 .chat-section {
   background-color: var(--gray-bg);
   padding: 80px var(--px);
@@ -625,6 +557,7 @@ ul     { list-style: none; }
 }
 .chat-cta:hover { background-color: var(--blue-dark); }
 
+
 .customize-section {
   background-color: var(--white);
   padding: 80px var(--px);
@@ -669,6 +602,7 @@ ul     { list-style: none; }
 .customize-right { flex: 1; min-width: 0; }
 .deals-img { width: 100%; height: auto; }
 
+
 .cta-banner {
   background-color: var(--navy);
   padding: 80px var(--px);
@@ -699,6 +633,7 @@ ul     { list-style: none; }
 }
 .cta-banner-btn:hover { background-color: var(--blue-dark); }
 .cta-no-card { font-size: 0.78rem; color: #6b7eaa; }
+
 
 .footer {
   background-color: var(--white);
@@ -859,30 +794,30 @@ ul     { list-style: none; }
   .footer-contact { flex-direction: column; gap: 12px; }
 }
 
+
 @media (max-width: 767px) {
 
   :root { --px: 20px; }
 
-  
   .nav-container { height: 56px; }
   .nav-links  { display: none; }
   .nav-cta    { display: none; }
   .nav-hamburger { display: flex; }
 
-  
   .hero {
     flex-direction: column;
     padding: 40px var(--px) 32px;
     gap: 28px;
     text-align: center;
+    justify-content: center;
+    justify-items: center;
   }
   .hero-left          { flex: unset; max-width: 100%; }
   .hero-left h1       { font-size: 1.9rem; }
   .hero-cta           { width: 100%; display: block; text-align: center; }
   .trustpilot         { justify-content: center; }
-  .hero-right         { width: 100%; }
+  .hero-right         { width: 100%; display: flex; justify-content: center; margin-right: auto; margin-left: auto;}
 
-  
   .stats { padding: 0 var(--px) 48px; }
   .stats-container {
     flex-direction: column;
@@ -894,30 +829,24 @@ ul     { list-style: none; }
   .stat-item h2       { font-size: 2.2rem; }
   .stat-divider       { width: 100%; height: 1px; }
 
-  
   .features           { padding: 48px var(--px); }
   .features-title     { font-size: 1.5rem; }
   .features-grid      { grid-template-columns: 1fr; gap: 28px; max-width: 100%; }
   .features-btn       { width: 100%; }
 
-  
   .testimonials       { padding: 48px var(--px); }
   .testimonials-title { font-size: 1.5rem; }
   .testimonials-grid  { grid-template-columns: 1fr; }
   .view-all-wrap      { padding: 20px var(--px) 40px; }
   .view-all-btn       { width: 100%; }
 
-  
   .sales-section      { padding: 48px var(--px); }
   .sales-container    { flex-direction: column; gap: 32px; }
   .sales-left         { flex: unset; width: 100%; }
   .sales-left h2      { font-size: 1.6rem; margin-bottom: 24px; }
   .sales-right        { flex-direction: column; width: 100%; gap: 16px; }
   .sales-chart        { width: 100%; }
-  .cashback-cards     { flex: unset; width: 100%; flex-direction: row; }
-  .cashback-card      { flex: 1; }
 
-  
   .chat-section       { padding: 48px var(--px); }
   .chat-container     { flex-direction: column; gap: 28px; text-align: center; }
   .chat-left          { width: 100%; }
@@ -926,7 +855,6 @@ ul     { list-style: none; }
   .chat-right p       { max-width: 100%; }
   .chat-cta           { width: 100%; }
 
-  
   .customize-section  { padding: 48px var(--px); }
   .customize-container{ flex-direction: column-reverse; gap: 28px; text-align: center; }
   .customize-left     { flex: unset; width: 100%; }
@@ -935,12 +863,10 @@ ul     { list-style: none; }
   .customize-right    { width: 100%; }
   .customize-cta      { width: 100%; }
 
-  
   .cta-banner         { padding: 56px var(--px); }
   .cta-banner-text    { font-size: 0.95rem; }
   .cta-banner-btn     { width: 100%; }
 
-  
   .footer             { padding: 40px var(--px) 24px; }
   .footer-top         { flex-direction: column; gap: 32px; }
   .footer-cols        { flex-wrap: wrap; gap: 24px; }
@@ -950,9 +876,9 @@ ul     { list-style: none; }
   .footer-bottom      { flex-direction: column; gap: 14px; text-align: center; }
 }
 
+
 @media (max-width: 400px) {
   .hero-left h1       { font-size: 1.6rem; }
   .footer-col         { flex: 0 0 100%; }
   .footer-contact     { flex-direction: column; gap: 16px; }
-  .cashback-cards     { flex-direction: column; }
 }
